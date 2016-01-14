@@ -26,7 +26,7 @@ def cli(debug, logfile, quiet):
 
     This tool assists in managing Route53 zones. There are 2 basic modes of operations:\n
      * import - imports zone content from a file, a zone XFER, or Route53. Output is
-     written to a YAML file.\n
+     written to to stdout or a YAML file if filename is specified.\n
      * apply - applies the content of a specified YAML file to a Route53 zone.
     """
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
