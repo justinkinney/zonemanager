@@ -1,0 +1,81 @@
+data:
+- name: example.com.
+  ttl: 86400
+  type: SOA
+  values:
+  - dns1 hostmaster 2001062501 21600 3600 604800 86400
+- name: example.com.
+  ttl: 86400
+  type: NS
+  values:
+  - dns1.example.com.
+  - dns2.example.com.
+- name: example.com.
+  ttl: 86400
+  type: MX
+  values:
+  - 10 mail.example.com.
+  - 20 mail2.example.com.
+- name: ftp.example.com.
+  ttl: 86400
+  type: CNAME
+  values:
+  - services.example.com.
+- name: www.example.com.
+  ttl: 86400
+  type: CNAME
+  values:
+  - services.example.com.
+- name: dns1.example.com.
+  ttl: 86400
+  type: A
+  values:
+  - 10.0.1.1
+- name: dns1.example.com.
+  ttl: 86400
+  type: AAAA
+  values:
+  - aaaa:bbbb::1
+- name: dns2.example.com.
+  ttl: 86400
+  type: A
+  values:
+  - 10.0.1.2
+- name: dns2.example.com.
+  ttl: 86400
+  type: AAAA
+  values:
+  - aaaa:bbbb::2
+- name: mail.example.com.
+  ttl: 86400
+  type: A
+  values:
+  - 10.0.1.5
+- name: mail.example.com.
+  ttl: 86400
+  type: AAAA
+  values:
+  - aaaa:bbbb::5
+- name: services.example.com.
+  ttl: 700
+  type: A
+  values:
+  - 10.0.1.10
+  - 10.0.1.11
+- name: services.example.com.
+  ttl: 86400
+  type: AAAA
+  values:
+  - aaaa:bbbb::10
+  - aaaa:bbbb::11
+- name: mail2.example.com.
+  ttl: 86400
+  type: A
+  values:
+  - 10.0.1.6
+- name: mail2.example.com.
+  ttl: 86400
+  type: AAAA
+  values:
+  - aaaa:bbbb::6
+origin: example.com.
